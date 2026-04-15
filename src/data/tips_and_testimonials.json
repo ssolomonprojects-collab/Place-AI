@@ -1,0 +1,156 @@
+{
+  "ai_tips": [
+    {
+      "id": 1,
+      "category": "DSA Preparation",
+      "tip": "Start with easy problems on arrays and strings before moving to trees and graphs. Solve at least 150 problems before your interview, focusing on patterns, not memorization.",
+      "source": "PlaceAI AI Engine"
+    },
+    {
+      "id": 2,
+      "category": "Resume",
+      "tip": "Quantify your impact on every bullet point. Instead of 'improved backend performance', write 'reduced API response time by 40% serving 500K daily users by optimizing DB queries and adding Redis caching'.",
+      "source": "PlaceAI AI Engine"
+    },
+    {
+      "id": 3,
+      "category": "System Design",
+      "tip": "Always start system design with clarifying questions: scale (users, QPS), latency requirements, read vs write ratio, consistency requirements. This shows structured thinking before jumping to solutions.",
+      "source": "PlaceAI AI Engine"
+    },
+    {
+      "id": 4,
+      "category": "Behavioral",
+      "tip": "Prepare 8-10 strong STAR stories that can be adapted to different questions. Cover: biggest achievement, failure, conflict, leadership, tight deadline, learning new skill, cross-team collaboration.",
+      "source": "PlaceAI AI Engine"
+    },
+    {
+      "id": 5,
+      "category": "Interview Mindset",
+      "tip": "Think out loud during coding interviews. Interviewers want to see your thought process. A correct silent solution is worse than a near-correct solution with clear reasoning.",
+      "source": "PlaceAI AI Engine"
+    },
+    {
+      "id": 6,
+      "category": "Time Management",
+      "tip": "In a 45-minute coding interview: spend 5 min understanding the problem, 5 min discussing approach, 20 min coding, 5 min testing with examples, 10 min optimizing. Always leave time to test.",
+      "source": "PlaceAI AI Engine"
+    },
+    {
+      "id": 7,
+      "category": "Company Research",
+      "tip": "Before any interview, read the company's engineering blog, recent product launches, and tech stack. Mention specific examples in your answers to show genuine interest and research.",
+      "source": "PlaceAI AI Engine"
+    },
+    {
+      "id": 8,
+      "category": "DSA Patterns",
+      "tip": "Master 15 key DSA patterns: sliding window, two pointers, binary search, BFS/DFS, backtracking, dynamic programming, monotonic stack, union-find, trie, heap. These cover 80% of interview problems.",
+      "source": "PlaceAI AI Engine"
+    },
+    {
+      "id": 9,
+      "category": "Mock Interviews",
+      "tip": "Do at least 5 mock interviews with peers before your real interview. Use a whiteboard or no IDE. Simulate real conditions: timer, no hints, explain every step. Discomfort during practice = confidence during real interview.",
+      "source": "PlaceAI AI Engine"
+    },
+    {
+      "id": 10,
+      "category": "Negotiation",
+      "tip": "Never accept the first offer without negotiating. Research market rates on Glassdoor, Levels.fyi, and LinkedIn Salary. Negotiate total comp (base + bonus + equity + joining bonus), not just base salary.",
+      "source": "PlaceAI AI Engine"
+    },
+    {
+      "id": 11,
+      "category": "Core CS",
+      "tip": "Revise OS concepts (processes, threads, deadlocks, memory management), DBMS (normalization, transactions, indexes, query optimization), and networking (TCP/IP, HTTP, DNS) for product and service companies.",
+      "source": "PlaceAI AI Engine"
+    },
+    {
+      "id": 12,
+      "category": "Coding Best Practices",
+      "tip": "Write clean code in interviews: meaningful variable names, no magic numbers, modular functions. Interviewers evaluate code quality, not just correctness. Comment complex logic briefly.",
+      "source": "PlaceAI AI Engine"
+    },
+    {
+      "id": 13,
+      "category": "After the Interview",
+      "tip": "Send a thank-you email to your recruiter within 24 hours. Briefly mention something specific you discussed. This reinforces your interest and professionalism. Very few candidates do this; it makes you memorable.",
+      "source": "PlaceAI AI Engine"
+    },
+    {
+      "id": 14,
+      "category": "Campus Placement",
+      "tip": "For campus placements, CGPA matters less than projects and skills for tech roles, but many companies have CGPA cutoffs (typically 6.0 to 7.5). Meet the cutoff, then focus on technical skills.",
+      "source": "PlaceAI AI Engine"
+    },
+    {
+      "id": 15,
+      "category": "LinkedIn & Profile",
+      "tip": "Optimize your LinkedIn profile: strong headline (Student at XYZ | SDE Intern | DSA | Java), featured projects with GitHub links, skills section with relevant technologies, 500+ connections in your field.",
+      "source": "PlaceAI AI Engine"
+    },
+    {
+      "id": 16,
+      "category": "System Design Depth",
+      "tip": "For system design, know these core components deeply: load balancers, CDNs, caches (Redis, Memcached), message queues (Kafka, RabbitMQ), databases (SQL vs NoSQL trade-offs), and API design patterns.",
+      "source": "PlaceAI AI Engine"
+    },
+    {
+      "id": 17,
+      "category": "Handling Unknown Questions",
+      "tip": "If you do not know the answer, say so honestly and explain your reasoning process. Interviewers value intellectual honesty and structured thinking over bluffing. Say: 'I haven't implemented this before, but here is how I would approach it...'",
+      "source": "PlaceAI AI Engine"
+    },
+    {
+      "id": 18,
+      "category": "Energy and Wellbeing",
+      "tip": "Sleep 7-8 hours before your interview. Fatigue significantly impacts problem-solving ability. Eat a light meal beforehand. Arrive (or log in) 10 minutes early. Physical and mental state matters as much as preparation.",
+      "source": "PlaceAI AI Engine"
+    },
+    {
+      "id": 19,
+      "category": "Projects",
+      "tip": "Build 2-3 strong projects that solve real problems rather than 10 tutorial-clones. Host them with a live demo URL. Document them well on GitHub. Be ready to discuss design decisions, challenges, and what you would improve.",
+      "source": "PlaceAI AI Engine"
+    },
+    {
+      "id": 20,
+      "category": "Rejection Handling",
+      "tip": "Rejections are data, not verdicts. Track every rejection with reason (if given), what went wrong, and what to improve. Most successful engineers got rejected multiple times before landing their dream job. Consistency beats talent.",
+      "source": "PlaceAI AI Engine"
+    }
+  ],
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Aditya Sharma",
+      "college": "NIT Trichy",
+      "placed_at": "Google India",
+      "role": "Software Development Engineer",
+      "ctc": "42 LPA",
+      "testimonial": "PlaceAI was my go-to app for the 3 months before my Google interview. The structured company-wise questions saved me enormous time. I used the AI tips daily and they gave me a mental edge I did not have before. The system design section especially was gold. Highly recommend to anyone targeting product companies.",
+      "date": "2024-11-15"
+    },
+    {
+      "id": 2,
+      "name": "Priya Venkataraman",
+      "college": "BITS Pilani",
+      "placed_at": "Flipkart",
+      "role": "SDE-1",
+      "ctc": "28 LPA",
+      "testimonial": "Coming from a non-CS background, I was intimidated by placement season. PlaceAI broke everything down into manageable steps. The difficulty ratings helped me start easy and progressively tackle harder problems. The behavioral question bank helped me craft strong STAR stories. I cleared all 5 rounds at Flipkart on my first attempt!",
+      "date": "2024-12-03"
+    },
+    {
+      "id": 3,
+      "name": "Rohit Krishnamurthy",
+      "college": "IIT Madras",
+      "placed_at": "Razorpay",
+      "role": "Backend Engineer",
+      "ctc": "25 LPA",
+      "testimonial": "The fintech company questions on PlaceAI are really well-researched. I could see Razorpay-specific content on payments and system design that exactly matched what I was asked. The prep weeks timeline feature kept me on track. This app genuinely understands what Indian product companies look for in candidates.",
+      "date": "2025-01-08"
+    }
+  ]
+}
