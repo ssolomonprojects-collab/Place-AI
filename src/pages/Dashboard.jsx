@@ -12,6 +12,7 @@ const NAV_ITEMS = [
   { icon: "📋", label: "Applications", id: "applications", path: null },
   { icon: "🎯", label: "Mock Interview", id: "mock", path: null },
   { icon: "⚙️", label: "Settings", id: "settings", path: null },
+  { icon: "🔐", label: "Admin Panel", id: "admin", path: null },
 ];
 
 const STATS = [
@@ -286,6 +287,62 @@ function SettingsTab({ user, name, setActiveNav }) {
   );
 }
 
+function AdminLogin({ onSuccess }) {
+  const [adminId, setAdminId] = useState("");
+  const [adminPass, setAdminPass] = useState("");
+  const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
+
+  const ADMIN_ID = "placeai_admin";
+  const ADMIN_PASS = "PlaceAI@2026";
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setError("");
+    setLoading(true);
+    await new Promise(r => setTimeout(r, 800));
+    if (adminId === ADMIN_ID && adminPass === ADMIN_PASS) {
+      onSuccess();
+    } else {
+      setError("Invalid Admin ID or Password");
+    }
+    setLoading(false);
+  };
+
+  return (
+    <div className="flex items-center justify-center min-h-96">
+      <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-8 w-full max-w-md">
+        <div className="text-center mb-6">
+          <div className="text-4xl mb-3">🔐</div>
+          <h2 className="text-xl font-bold text-gray-900">Admin Access</h2>
+          <p className="text-gray-400 text-sm mt-1">Enter your admin credentials to continue</p>
+        </div>
+        <form onSubmit={handleSubmit} className="space-y-4">
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">Admin ID</label>
+            <input type="text" placeholder="Enter admin ID"
+              value={adminId} onChange={e => setAdminId(e.target.value)} required
+              className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-indigo-500 bg-gray-50" />
+          </div>
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">Password</label>
+            <input type="password" placeholder="Enter admin password"
+              value={adminPass} onChange={e => setAdminPass(e.target.value)} required
+              className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-indigo-500 bg-gray-50" />
+          </div>
+          {error && <p className="text-red-500 text-xs text-center">{error}</p>}
+          <button type="submit" disabled={loading}
+            className="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 rounded-xl text-sm transition-all disabled:opacity-50">
+            {loading ? "Verifying..." : "Access Admin Panel →"}
+          </button>
+        </form>
+        <div className="mt-4 p-3 bg-amber-50 rounded-xl border border-amber-100">
+          <p className="text-amber-700 text-xs text-center">⚠️ Restricted access — Admin only</p>
+        </div>
+      </div>
+    </div>
+  );
+}
 export default function Dashboard({ user }) {
   const navigate = useNavigate();
   const [activeNav, setActiveNav] = useState("dashboard");
@@ -358,6 +415,7 @@ export default function Dashboard({ user }) {
         </table>
       </div>
     );
+    if (activeNav === "admin") return <AdminLogin onSuccess={() => navigate("/admin")} />;
     if (activeNav === "mock") return (
       <div className="flex items-center justify-center min-h-96">
         <div className="text-center">
