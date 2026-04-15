@@ -11,6 +11,7 @@ import PrepDashboard from "./pages/PrepDashboard";
 import MockInterview from "./pages/MockInterview";
 import ChatBot from "./pages/ChatBot";
 import DashboardApp from "./DashboardApp";
+import AdminDashboard from "./pages/AdminDashboard";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -21,16 +22,21 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/companies" element={<CompanySelect />} />
-
-          {/* Changed from /dashboard/:company to /prep/:company */}
           <Route path="/prep/:company" element={<PrepDashboard />} />
           <Route path="/interview/:company" element={<MockInterview />} />
           <Route path="/chat" element={<ChatBot />} />
 
-          {/* Protected dashboard — /dashboard/* handles all sub-routes */}
+          {/* Protected dashboard */}
           <Route path="/dashboard/*" element={
             <ProtectedRoute>
               <DashboardApp />
+            </ProtectedRoute>
+          } />
+
+          {/* Admin only */}
+          <Route path="/admin" element={
+            <ProtectedRoute>
+              <AdminDashboard />
             </ProtectedRoute>
           } />
         </Routes>
