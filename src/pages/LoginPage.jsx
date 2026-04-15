@@ -170,9 +170,9 @@ export default function LoginPage() {
   const handleGoogle = async () => {
   await supabase.auth.signInWithOAuth({
     provider: "google",
-    options: { redirectTo: `${window.location.origin}/dashboard` }
-    });
-  };
+    options: { redirectTo: `https://place-ai-five.vercel.app/dashboard` }
+  });
+};
 
   const handleGitHub = async () => {
     await supabase.auth.signInWithOAuth({
